@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html>
+  <script src="https://kit.fontawesome.com/5426e91a66.js" crossorigin="anonymous"></script>
   <head>
     <title>Bookers2</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <header>
+  <body class="d-flex flex-column vh-100">
+    <header class="shadow-sm">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <ul class="list-unstyled">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <span>Bookres</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
     <% if user_signed_in? %>
-      <li>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      </li>
+        <li class="nav-item">
+        <%= link_to user_path(current_user.id) do %>
+        <i class="fa-solid fa-house"></i>Home
+        <% end %>
+        <li class="nav-item">
+        <%= link_to users_path do %>
+        <i class="fa-solid fa-house"></i>User
+        <% end %>
+         <%= link_to books_path do %>
+        <i class="fa-solid fa-house"></i>Book
+        <% end %>
+      <li class="nav-item">
+        <%= link_to destroy_user_session_path, method: :delete do %>
+        <i class="fa-solid fa-right-from-bracket"></i>Log out
+        <% end %>
+        </li>
+
+
     <% else %>
-      <li>
-        <%= link_to "新規登録", new_user_registration_path %>
+      <li class="nav-item">
+        <%= link_to root_path do %>
+        <i class="fa-solid fa-house"></i>Home
+        <% end %>
       </li>
-      <li>
-        <%= link_to "ログイン", new_user_session_path %>
+       <li class="nav-item">
+        <%= link_to home_about_path do %>
+        <i class="fa-solid fa-link-horizontal"></i>>About
+        <% end %>
       </li>
-    <% end %>
-  </header>
-  
+       <li class="nav-item">
+        <%= link_to new_user_registration_path do %>
+        <<i class="fa-regular fa-user-plus"></i>Sing up
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <%= link_to  new_user_session_path do %>
+        <i class="fa-solid fa-right-to-bracket"></i>Log in
+         <% end %>
+          </div>
+        </div>
+        </ul>
+      </nav>
+      <% end %>
+    </header>
+
     <%= yield %>
+     <footer>
+     <p class="text-center ">CopyRight Infratop.inc</p>
+    </footer>
+
   </body>
 </html>

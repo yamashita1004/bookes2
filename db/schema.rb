@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2023_01_02_130852) do
   end
 
   create_table "post_images", force: :cascade do |t|
+    t.string "name"
+    t.text "introduction"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
