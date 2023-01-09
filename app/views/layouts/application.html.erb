@@ -19,24 +19,29 @@
             <span>Bookres</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
     <% if user_signed_in? %>
-        <li class="nav-item">
+    
+        <li class="nav-link text-light">
         <%= link_to user_path(current_user.id) do %>
-        <i class="fa-solid fa-house"></i>Home
+        <i class="fa-solid fa-house"></i> Home
         <% end %>
-        <li class="nav-item">
+        </li>
+        <li class="nav-link text-light">
         <%= link_to users_path do %>
-        <i class="fa-solid fa-house"></i>User
+        <i class="fa-solid fa-users"></i> Users
         <% end %>
+        </li>
+        <li class="nav-link text-light">
          <%= link_to books_path do %>
-        <i class="fa-solid fa-house"></i>Book
+        <i class="fa-sharp fa-solid fa-book-open"></i></i> Books
         <% end %>
-      <li class="nav-item">
+        </li>
+      <li class="nav-link text-light">
         <%= link_to destroy_user_session_path, method: :delete do %>
         <i class="fa-solid fa-right-from-bracket"></i>Log out
         <% end %>
@@ -46,23 +51,24 @@
     <% else %>
       <li class="nav-item">
         <%= link_to root_path do %>
-        <i class="fa-solid fa-house"></i>Home
+        <i class="fa-solid fa-house"></i> Home
         <% end %>
       </li>
        <li class="nav-item">
         <%= link_to home_about_path do %>
-        <i class="fa-solid fa-link-horizontal"></i>>About
+        <i class="fa-solid fa-link"></i> About
         <% end %>
       </li>
        <li class="nav-item">
         <%= link_to new_user_registration_path do %>
-        <<i class="fa-regular fa-user-plus"></i>Sing up
+        <i class="fa-solid fa-user-plus"></i> Sing up
         <% end %>
       </li>
       <li class="nav-item">
         <%= link_to  new_user_session_path do %>
-        <i class="fa-solid fa-right-to-bracket"></i>Log in
+        <i class="fa-solid fa-right-to-bracket"></i> Log in
          <% end %>
+         
           </div>
         </div>
         </ul>
@@ -71,7 +77,7 @@
     </header>
 
     <%= yield %>
-     <footer>
+     <footer class="footer"r>
      <p class="text-center ">CopyRight Infratop.inc</p>
     </footer>
 

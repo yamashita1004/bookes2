@@ -1,5 +1,33 @@
-<h2>books</h2>
-<p><%= @book.title %></p>
+<div>
+  <%= flash[:notice] %>
+</div>
+  <div class="container">
+     <div class="row">
+        <%= render 'list',books: @books %>
+        <div class= "col-md-8 affset-md1">
+    
+       <h2>Book detail</h2>
+      <table class='table table-hover table-inverse'>
 
-<h2>本文</h2>
-<p><%= @book.body %></p>
+      <tr>
+      <th></th>
+      <th>Title</th>
+      <th>Opinion</th>
+      <th colspan="3"></th>
+      </tr>
+
+      <% @book.each do |book| %>
+      <tr>
+      <td>
+      <%= image_tag @user.get_profile_image(100,100), size: "100x100" %></br>
+      <%= link_to @user.name, user_path(book.id) %></td>
+      <td><%=link_to book.title, book_path(book.id)%></td>
+      <td><%= book.body %></td>
+      <td><%= link_to"Edit","/books/#{book.id}/edit", class:"btn btn-success"%></td>
+      <td><%= link_to"Destroy","/books/#{book.id}",method: :delete,"data-confirm"=>"Are you sure?",class:"btn btn-danger" %>
+      </tr>
+      <% end %>
+      </table>
+            </div>
+       </div>
+  </div>

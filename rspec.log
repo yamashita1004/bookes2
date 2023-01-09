@@ -1,0 +1,156 @@
+
+An error occurred while loading ./spec/models/book_spec.rb.
+[31mFailure/Error: before_action :authenticate_user!, except: [:top][0m
+[31m[0m
+[31mNoMethodError:[0m
+[31m  undefined method `before_action' for ApplicationRecord:Class[0m
+[31m  Did you mean?  before_commit[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activerecord-6.1.7/lib/active_record/dynamic_matchers.rb:22:in `method_missing'[0m
+[36m# ./app/models/application_record.rb:2:in `<class:ApplicationRecord>'[0m
+[36m# ./app/models/application_record.rb:1:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:30:in `require'[0m
+[36m# ./app/models/user.rb:1:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:30:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activesupport-6.1.7/lib/active_support/inflector/methods.rb:274:in `const_get'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activesupport-6.1.7/lib/active_support/inflector/methods.rb:274:in `constantize'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activesupport-6.1.7/lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise.rb:318:in `get'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/mapping.rb:83:in `to'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/mapping.rb:78:in `modules'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/mapping.rb:95:in `routes'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/mapping.rb:162:in `default_used_route'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/mapping.rb:72:in `initialize'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise.rb:354:in `new'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise.rb:354:in `add_mapping'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/rails/routes.rb:243:in `block in devise_for'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/rails/routes.rb:242:in `each'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/lib/devise/rails/routes.rb:242:in `devise_for'[0m
+[36m# ./config/routes.rb:3:in `block in <main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionpack-6.1.7/lib/action_dispatch/routing/route_set.rb:427:in `instance_exec'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionpack-6.1.7/lib/action_dispatch/routing/route_set.rb:427:in `eval_block'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionpack-6.1.7/lib/action_dispatch/routing/route_set.rb:409:in `draw'[0m
+[36m# ./config/routes.rb:1:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:47:in `load'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:47:in `block in load_paths'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:47:in `each'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:47:in `load_paths'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:21:in `reload!'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:35:in `block in updater'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activesupport-6.1.7/lib/active_support/file_update_checker.rb:83:in `execute'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/routes_reloader.rb:10:in `execute'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application/finisher.rb:195:in `block in <module:Finisher>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `instance_exec'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `run'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:61:in `block in run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:60:in `run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application.rb:391:in `initialize!'[0m
+[36m# ./config/environment.rb:5:in `<top (required)>'[0m
+[36m# ./spec/rails_helper.rb:4:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<top (required)>'[0m
+[36m# ./spec/models/book_spec.rb:1:in `require'[0m
+[36m# ./spec/models/book_spec.rb:1:in `<top (required)>'[0m
+
+An error occurred while loading ./spec/models/user_spec.rb.
+[31mFailure/Error: require File.expand_path('../../config/environment', __FILE__)[0m
+[31m[0m
+[31mFrozenError:[0m
+[31m  can't modify frozen Array: ["/home/ec2-user/environment/bookers2/app/channels", "/home/ec2-user/environment/bookers2/app/controllers", "/home/ec2-user/environment/bookers2/app/controllers/concerns", "/home/ec2-user/environment/bookers2/app/helpers", "/home/ec2-user/environment/bookers2/app/jobs", "/home/ec2-user/environment/bookers2/app/mailers", "/home/ec2-user/environment/bookers2/app/models", "/home/ec2-user/environment/bookers2/app/models/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/mailers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/models"][0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `unshift'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `block in <class:Engine>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `instance_exec'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `run'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:61:in `block in run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `each'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `tsort_each_child'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:60:in `run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application.rb:391:in `initialize!'[0m
+[36m# ./config/environment.rb:5:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/models/user_spec.rb:1:in `<main>'[0m
+
+An error occurred while loading ./spec/system/01_before_login_spec.rb.
+[31mFailure/Error: require File.expand_path('../../config/environment', __FILE__)[0m
+[31m[0m
+[31mFrozenError:[0m
+[31m  can't modify frozen Array: ["/home/ec2-user/environment/bookers2/app/channels", "/home/ec2-user/environment/bookers2/app/controllers", "/home/ec2-user/environment/bookers2/app/controllers/concerns", "/home/ec2-user/environment/bookers2/app/helpers", "/home/ec2-user/environment/bookers2/app/jobs", "/home/ec2-user/environment/bookers2/app/mailers", "/home/ec2-user/environment/bookers2/app/models", "/home/ec2-user/environment/bookers2/app/models/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/mailers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/models"][0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `unshift'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `block in <class:Engine>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `instance_exec'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `run'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:61:in `block in run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `each'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `tsort_each_child'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:60:in `run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application.rb:391:in `initialize!'[0m
+[36m# ./config/environment.rb:5:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/system/01_before_login_spec.rb:1:in `<main>'[0m
+
+An error occurred while loading ./spec/system/02_after_login_spec.rb.
+[31mFailure/Error: require File.expand_path('../../config/environment', __FILE__)[0m
+[31m[0m
+[31mFrozenError:[0m
+[31m  can't modify frozen Array: ["/home/ec2-user/environment/bookers2/app/channels", "/home/ec2-user/environment/bookers2/app/controllers", "/home/ec2-user/environment/bookers2/app/controllers/concerns", "/home/ec2-user/environment/bookers2/app/helpers", "/home/ec2-user/environment/bookers2/app/jobs", "/home/ec2-user/environment/bookers2/app/mailers", "/home/ec2-user/environment/bookers2/app/models", "/home/ec2-user/environment/bookers2/app/models/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/mailers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/models"][0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `unshift'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `block in <class:Engine>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `instance_exec'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `run'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:61:in `block in run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `each'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `tsort_each_child'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:60:in `run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application.rb:391:in `initialize!'[0m
+[36m# ./config/environment.rb:5:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/system/02_after_login_spec.rb:1:in `<main>'[0m
+
+An error occurred while loading ./spec/system/03_finishing_touches_spec.rb.
+[31mFailure/Error: require File.expand_path('../../config/environment', __FILE__)[0m
+[31m[0m
+[31mFrozenError:[0m
+[31m  can't modify frozen Array: ["/home/ec2-user/environment/bookers2/app/channels", "/home/ec2-user/environment/bookers2/app/controllers", "/home/ec2-user/environment/bookers2/app/controllers/concerns", "/home/ec2-user/environment/bookers2/app/helpers", "/home/ec2-user/environment/bookers2/app/jobs", "/home/ec2-user/environment/bookers2/app/mailers", "/home/ec2-user/environment/bookers2/app/models", "/home/ec2-user/environment/bookers2/app/models/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/mailers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/helpers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actionmailbox-6.1.7/app/models", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/controllers/concerns", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/jobs", "/home/ec2-user/.rvm/gems/ruby-3.1.2/gems/activestorage-6.1.7/app/models"][0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `unshift'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/engine.rb:588:in `block in <class:Engine>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `instance_exec'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:32:in `run'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:61:in `block in run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `each'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:50:in `tsort_each_child'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/initializable.rb:60:in `run_initializers'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7/lib/rails/application.rb:391:in `initialize!'[0m
+[36m# ./config/environment.rb:5:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/rails_helper.rb:4:in `<main>'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/bootsnap-1.15.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'[0m
+[36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/zeitwerk-2.6.6/lib/zeitwerk/kernel.rb:38:in `require'[0m
+[36m# ./spec/system/03_finishing_touches_spec.rb:1:in `<main>'[0m
+No examples found.
+
+Finished in 0.00007 seconds (files took 1.21 seconds to load)
+[31m0 examples, 0 failures, 5 errors occurred outside of examples[0m
+
