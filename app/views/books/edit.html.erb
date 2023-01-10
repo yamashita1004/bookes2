@@ -10,7 +10,7 @@
       <% end %>
 
     </ul>
-  </div>
+
    <% end %>
   
  <div class="container">  
@@ -18,7 +18,8 @@
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
 <h1>Editing Book</h1>
 
-<%= form_with model: Book.new do |f| %>
+
+<%= form_with model: @book do |f| %>
 
 <h4>title</h4>
 <%= f.text_field :title %>
@@ -31,7 +32,7 @@
 <% end %>
 <%= link_to "Show", book_path(@book.id) %>
  |
-<%= link_to "back", "/books" %>
+<%= link_to "Back", books_path %>
    </div>
   </div>
   </div>

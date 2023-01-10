@@ -1,6 +1,12 @@
- <div>
-  <%= flash[:notice] %>
-</div>
+
+ <% if @user.errors.any? %>
+  <%= @user.errors.count %>errors prohibited this book from being saved:
+  <% end %>
+  <ul>
+  <% @user.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+      <% end %>
+
 <div class="container">
   <div class="col-sm-12bcol-md-8 col-lg-5px-5 px-sm-0 mx-auto">
 <h2>User   info</h2>

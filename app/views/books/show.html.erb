@@ -3,6 +3,7 @@
 </div>
   <div class="container">
      <div class="row">
+       <div class="col-md-3">
         <%= render 'list',books: @books %>
         <div class= "col-md-8 affset-md1">
     
@@ -16,18 +17,21 @@
       <th colspan="3"></th>
       </tr>
 
-      <% @book.each do |book| %>
+     
       <tr>
       <td>
-      <%= image_tag @user.get_profile_image(100,100), size: "100x100" %></br>
-      <%= link_to @user.name, user_path(book.id) %></td>
-      <td><%=link_to book.title, book_path(book.id)%></td>
-      <td><%= book.body %></td>
-      <td><%= link_to"Edit","/books/#{book.id}/edit", class:"btn btn-success"%></td>
-      <td><%= link_to"Destroy","/books/#{book.id}",method: :delete,"data-confirm"=>"Are you sure?",class:"btn btn-danger" %>
-      </tr>
+      <%= image_tag @book.user.get_profile_image(100,100), size: "100x100" %></br>
+      <%= link_to @book.user.name, user_path(@user.id) %></td>
+      <td><%=link_to @book.title, book_path(@book.id)%></td>
+      <td><%= @book.body %></td>
+      <% if @user == current_user %>
+      <td><%= link_to"Edit","/books/#{@book.id}/edit", class:"btn btn-success"%></td>
+      <td><%= link_to"Destroy","/books/#{@book.id}",method: :delete,"data-confirm"=>"Are you sure?",class:"btn btn-danger" %>
       <% end %>
+      </tr>
+      
       </table>
+               </div>
             </div>
        </div>
   </div>

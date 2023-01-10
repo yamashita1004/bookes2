@@ -12,11 +12,14 @@
  <div class='container'>
    <div class="row">
   <div class='mx-auto col-11 col-sm-10 col-lg-8 col-xl-6'>
+<div>
+  <%= flash[:notice] %>
+</div>
 <div class="container">
-  <div calss="row"></div>
-<h1>welcome to<i class="fa-solid fa-book"></i>Bookers!!</h1>
+  <div calss="row">
+<h1>welcome to<i class="fas fa-book"></i>Bookers!!</h1>
 
-<p>In<i class="fa-solid fa-book"></i><strong>Bookers</strong>,</p>
+<p>In<i class="fas fa-book"></i><strong>Bookers</strong>,</p>
 <p>you can share and exchange your opinions , inpressions , and emotions</p>
 <p>about varioius books!</p>
 </div>
@@ -24,13 +27,13 @@
   <div class="btn-wrapper col-10 mx-auto">
       <div class="row">
       <div>
-  
+
       <div class="row">
       <p><a class="btn btn-info btn-sm btn-block mb-3 " href="/users/sign_in">Log in</a></p></br>
     </div>
       <div class="row">
-      <p><a class="btn btn-success btn-sm btn-block" href="/users/sign_up">Sign Up</a></p>
-     </div>
+      <p><a class="btn btn-success btn-sm btn-block sign_up" href="/users/sign_up">Sign up</a></p>
+      </div>
      </div>
    </div>
   </div>

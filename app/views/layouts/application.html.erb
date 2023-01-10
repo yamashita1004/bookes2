@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <script src="https://kit.fontawesome.com/5426e91a66.js" crossorigin="anonymous"></script>
   <head>
     <title>Bookers2</title>
@@ -16,7 +17,7 @@
          <ul class="list-unstyled">
         <div class="container">
           <a class="navbar-brand" href="/">
-            <span>Bookres</span>
+            <span>Bookers</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
@@ -25,25 +26,25 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
     <% if user_signed_in? %>
-    
+
         <li class="nav-link text-light">
         <%= link_to user_path(current_user.id) do %>
-        <i class="fa-solid fa-house"></i> Home
+        <i class="fas fa-home"></i> Home
         <% end %>
         </li>
         <li class="nav-link text-light">
         <%= link_to users_path do %>
-        <i class="fa-solid fa-users"></i> Users
+        <i class="fas fa-users"></i> Users
         <% end %>
         </li>
         <li class="nav-link text-light">
          <%= link_to books_path do %>
-        <i class="fa-sharp fa-solid fa-book-open"></i></i> Books
+        <i class="fas fa-book-open"></i></i> Books
         <% end %>
         </li>
       <li class="nav-link text-light">
         <%= link_to destroy_user_session_path, method: :delete do %>
-        <i class="fa-solid fa-right-from-bracket"></i>Log out
+        <i class="fas fa-sign-out-alt"></i>Log out
         <% end %>
         </li>
 
@@ -51,24 +52,24 @@
     <% else %>
       <li class="nav-item">
         <%= link_to root_path do %>
-        <i class="fa-solid fa-house"></i> Home
+        <i class="fas fa-home"></i> Home
         <% end %>
       </li>
        <li class="nav-item">
         <%= link_to home_about_path do %>
-        <i class="fa-solid fa-link"></i> About
+        <i class="fas fa-link"></i> About
         <% end %>
       </li>
        <li class="nav-item">
         <%= link_to new_user_registration_path do %>
-        <i class="fa-solid fa-user-plus"></i> Sing up
+        <i class="fas fa-user-plus"></i> Sign up
         <% end %>
       </li>
       <li class="nav-item">
         <%= link_to  new_user_session_path do %>
-        <i class="fa-solid fa-right-to-bracket"></i> Log in
+        <i class="fas fa-sign-in-alt"></i> Log in
          <% end %>
-         
+
           </div>
         </div>
         </ul>

@@ -1,5 +1,6 @@
-
-  <div class="col-lg-4" >
+<div class="container">
+ <div class="row">
+  <div class="col-md-3" >
         <h1>Users info</h1>
           <tb><%= image_tag @user.get_profile_image(100,100), size: "100x100" %></tb>
 
@@ -13,12 +14,12 @@
              </table>
 
                          <%= link_to edit_user_path(@user), class: "btn btn-light btn-outline-secondary btn-block" do %>
-                            <i class="fa-solid fa-user-gear"></i>
+                            <i class="fas fa-user-cog"></i>
 
                                <% end %>
 
 
-                              
+
                                <h2>New book</h2>
                                <div class="md-3">
                                    <%= form_with model: Book.new do |f| %>
@@ -30,6 +31,8 @@
                                           <br><%= f.submit "Create Book", class: "col-xs-12 btn btn-success" %></br>
                                 </div>
                                    <% end %>
-                                   
 
+
+                    </div>
+                   </div>
                 </div>
