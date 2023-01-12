@@ -1,7 +1,6 @@
-<div class="container">
- <div class="row">
+
   <div class="col-md-3" >
-        <h1>Users info</h1>
+        <h2>Users info</h2>
           <tb><%= image_tag @user.get_profile_image(100,100), size: "100x100" %></tb>
 
              <table class='table table-hover table-inverse'>
@@ -12,12 +11,12 @@
                        <th>introduction</th><th><%= @user.introduction%></th>
                     </tr>
              </table>
-
+                        <div class="row">
                          <%= link_to edit_user_path(@user), class: "btn btn-light btn-outline-secondary btn-block" do %>
                             <i class="fas fa-user-cog"></i>
 
                                <% end %>
-
+                        </div>
 
 
                                <h2>New book</h2>
@@ -33,6 +32,4 @@
                                    <% end %>
 
 
-                    </div>
-                   </div>
                 </div>
